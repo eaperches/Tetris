@@ -4,6 +4,7 @@ Tetris game I made for fun in Python without using any game building packages.
 To start run .py file in console.
 
 Game uses Keyboard
+
 To exit game, press esc in your keyboard.
 
 Controls:
