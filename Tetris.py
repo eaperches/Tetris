@@ -230,7 +230,6 @@ class Tetris(object):
                 break
                 
 class Tetris_Shape(object):
-    #Shapes are defined by an origin coordinate, and built upon that on a list of coordinates
     def __init__(self, shape_type, shift):
         self.create_shapes = {
                        0: self.L_shape,
