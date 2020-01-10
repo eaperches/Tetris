@@ -266,9 +266,6 @@ class Tetris_Shape(object):
     def flip(self, flips):
         if self.shape_type == 4:
             pass
-        
-        if self.shape_type == 1:
-            self.shape = np.rot90(self.shape, flips%2)
         else:
             self.shape = np.rot90(self.shape, flips)
         self.coordinates = self.coordinates_w_1()
