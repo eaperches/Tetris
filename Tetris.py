@@ -250,7 +250,7 @@ class Tetris_Shape(object):
     def L_shape(self):
         return np.array([[0,0,1],[1,1,1]])
     def l_shape(self):
-        return np.array([[1,1,1,1],[0,0,0,0]])
+        return np.array([[1,1,1,1]])
     def z_shape(self):
         return np.array([[1,1,0],[0,1,1]])
     def hplus_shape(self):
@@ -266,6 +266,7 @@ class Tetris_Shape(object):
     def flip(self, flips):
         if self.shape_type == 4:
             pass
+                
         else:
             self.shape = np.rot90(self.shape, flips)
         self.coordinates = self.coordinates_w_1()
