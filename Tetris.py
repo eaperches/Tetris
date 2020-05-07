@@ -179,22 +179,27 @@ class Tetris(object):
                 break
             time.sleep(0.05)
             
+            
             if keyboard.is_pressed('escape'):
                 self.exit_ = True
                 break
-            elif keyboard.is_pressed('up'):
+            
+            if keyboard.is_pressed('up'):
                 self.flip_shape_ip()
                 self.show_grid_play()
                 
-            elif keyboard.is_pressed('down'):
+            if keyboard.is_pressed('down'):
                 break
-            elif keyboard.is_pressed('right'):
+            
+            if keyboard.is_pressed('right'):
                 self.move_side('right')
                 self.show_grid_play()
-            elif keyboard.is_pressed('left'):
+                
+            if keyboard.is_pressed('left'):
                 self.move_side('left')
                 self.show_grid_play()
             
+                
     def check_status(self):
         for value in self.grid[0]:
             if value == '1':
